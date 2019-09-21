@@ -30,7 +30,7 @@
 }],
 ```
 
-![1568869009929](https://github.com/caicaijun007/xiaocaicai07.github.io/blob/master/1568869009929.png)
+![1568869009929](https://github.com/caicaijun007/xiaocaicai07.github.io/blob/master/1568869009929.jpg)
 
 ### 4、安装css预处理
 - 安装less、less-loader
@@ -67,8 +67,8 @@ const lessModuleRegex = /\.module\.less$/;
     ),
 },
 ```
-![1568869009930](https://github.com/caicaijun007/xiaocaicai07.github.io/blob/master/1568869009930.png)
-![1568869009931](https://github.com/caicaijun007/xiaocaicai07.github.io/blob/master/1568869009931.png)
+![1568869009930](https://github.com/caicaijun007/xiaocaicai07.github.io/blob/master/1568869009930.jpg)
+![1568869009931](https://github.com/caicaijun007/xiaocaicai07.github.io/blob/master/1568869009931.jpg)
 
 ### 5、目录结构
 开发源代码在src目录下进行：
