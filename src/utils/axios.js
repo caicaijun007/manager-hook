@@ -2,8 +2,8 @@ import axios from 'axios';
 import Qs from 'qs';
 import { Modal } from 'antd';
 
-export default class Axios {
-    static ajax(options) {
+export default {
+    ajax(options) {
         let config = {
             url: options.url,
             baseURL: 'http://localhost/manager_api',

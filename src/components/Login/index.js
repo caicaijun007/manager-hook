@@ -7,7 +7,7 @@ import { now } from 'moment';
 import './index.less';
 const FormItem = Form.Item;
 
-function Login(props) {
+export default Form.create({})(function (props) {
 
     //登录之前，清除上次登录信息
     let user = localStorage.getItem('_userinfo') ? JSON.parse(localStorage.getItem('_userinfo')) : false;
@@ -103,7 +103,4 @@ function Login(props) {
             </div>
         </Fragment>
     )
-
-}
-
-export default Form.create({})(Login);
+})

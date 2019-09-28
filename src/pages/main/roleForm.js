@@ -11,7 +11,7 @@ const formItemLayout = {
     }
 }
 
-function RoleForm(props, ref) {
+export default Form.create()(forwardRef(function (props, ref) {
 
     const { getFieldDecorator } = props.form;
     // const childRef = useRef(null);
@@ -45,6 +45,4 @@ function RoleForm(props, ref) {
             </FormItem>
         </Form>
     )
-
-}
-export default Form.create()(forwardRef(RoleForm));
+}))

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-function RouteAuth({ path, component: AuthComponent }) {
+export default function ({ path, component: AuthComponent }) {
 
     let isLogin = localStorage.getItem('_userinfo') ? JSON.parse(localStorage.getItem('_userinfo')) : false;
 
@@ -9,5 +9,3 @@ function RouteAuth({ path, component: AuthComponent }) {
         <Route path={path} render={() => isLogin ? <AuthComponent /> : <Redirect to='/login' />} />
     )
 }
-
-export default RouteAuth;

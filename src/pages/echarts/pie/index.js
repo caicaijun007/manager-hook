@@ -10,7 +10,7 @@ import 'echarts/lib/component/legend';
 import 'echarts/lib/component/markPoint';
 import '../echart.less';
 
-function Pie() {
+export default function () {
 
     useEffect(() => echarts.registerTheme('manager', echartTheme), []);
 
@@ -237,5 +237,3 @@ function Pie() {
         </Fragment>
     )
 }
-
-export default Pie;

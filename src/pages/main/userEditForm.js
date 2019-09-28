@@ -5,21 +5,24 @@ const FormItem = Form.Item;
 const RadioGroup = Radio.Group;
 const TextArea = Input.TextArea;
 const Option = Select.Option;
-const formItemLayout = {
-    labelCol: {
-        span: 6
-    },
-    wrapperCol: {
-        span: 18
-    }
-}
-const rowObject = {
-    minRows: 4, maxRows: 6
-}
 
-function EditForm(props, ref) {
+export default Form.create()(forwardRef(function (props, ref) {
 
     let [roleList, setRoleList] = useState([]);
+    const { getFieldDecorator } = props.form;
+    const { userInfo } = props;
+    const formItemLayout = {
+        labelCol: {
+            span: 6
+        },
+        wrapperCol: {
+            span: 18
+        }
+    }
+    const rowObject = {
+        minRows: 4, maxRows: 6
+    }
+
 
     useEffect(() => getRoleList(), []);
 
@@ -37,9 +40,6 @@ function EditForm(props, ref) {
             }
         })
     }
-
-    const { getFieldDecorator } = props.form;
-    const { userInfo } = props;
 
     useImperativeHandle(ref, () => {
         //暴露子组件的属性与方法
@@ -102,6 +102,4 @@ function EditForm(props, ref) {
             </FormItem>
         </Form>
     )
-}
-
-export default Form.create()(forwardRef(EditForm));
+}))

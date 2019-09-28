@@ -7,7 +7,7 @@ const FormItem = Form.Item;
 const TextArea = Input.TextArea;
 const RadioGroup = Radio.Group;
 
-function Register(props) {
+export default Form.create()(function (props) {
 
     const { isLogin, changeOption } = props;
     const { getFieldDecorator, validateFields, getFieldsValue } = props.form;
@@ -174,10 +174,7 @@ function Register(props) {
                         <Button type="primary" onClick={onSubmit}>注册</Button>
                     </FormItem>
                 </Form>
-
             </div>
         </div>
     )
-}
-
-export default Form.create()(Register);
+})

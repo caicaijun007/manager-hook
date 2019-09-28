@@ -4,7 +4,7 @@ import { Message } from './todoList';
 import { addMessageOption } from '../../store/actionCreater';
 import './hook.less';
 
-function ReduxPage() {
+export default function () {
     const { state, dispatch } = useContext(Message);
     function addItem() {
         dispatch(addMessageOption('默认信息'));
@@ -21,5 +21,3 @@ function ReduxPage() {
         </Card>
     );
 }
-
-export default ReduxPage;

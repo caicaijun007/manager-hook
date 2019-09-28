@@ -10,7 +10,7 @@ import Table from '../../components/Table';
 import Search from '../../components/Search';
 import './main.less';
 
-function User() {
+export default function () {
 
     let [search] = useState(localStorage.getItem("_search") ? JSON.parse(localStorage.getItem("_search")) : []);
     let [roleList, setRoleList] = useState([]);
@@ -280,5 +280,3 @@ function User() {
         </Fragment>
     )
 }
-
-export default User;

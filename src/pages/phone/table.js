@@ -7,7 +7,7 @@ import Axios from '../../utils/axios';
 import moment from 'moment';
 import './phone.less';
 
-function PhoneTable() {
+export default function () {
 
     let [search] = useState(localStorage.getItem("_search") ? JSON.parse(localStorage.getItem("_search")) : []);
     let [page, setPage] = useState(1);
@@ -178,5 +178,3 @@ function PhoneTable() {
         </Fragment>
     )
 }
-
-export default PhoneTable;

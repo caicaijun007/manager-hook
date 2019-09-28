@@ -3,7 +3,7 @@ import Axios from '../../utils/axios';
 import { Card, Modal, Button, message, Badge, BackTop } from 'antd';
 import Table from '../../components/Table';
 
-function HightTable() {
+export default function () {
 
     let [dataSource, setDataSource] = useState([]);
     let [dataSource2, setDataSource2] = useState([]);
@@ -476,5 +476,3 @@ function HightTable() {
         </Fragment>
     )
 }
-
-export default HightTable;

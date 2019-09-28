@@ -3,12 +3,10 @@ import { Layout } from 'antd';
 import './index.less';
 const { Content } = Layout;
 
-function ContentLayout() {
+export default function () {
     return (
         <Content className='content'>
             <div>学习 React 和 Ant Design</div>
         </Content>
     )
 }
-
-export default ContentLayout;

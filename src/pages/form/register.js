@@ -7,7 +7,7 @@ const RadioGroup = Radio.Group;
 const Option = Select.Option;
 const TextArea = Input.TextArea;
 
-function FormRegister(props) {
+export default Form.create()(function (props) {
 
     let [userImg, setUserImg] = useState(null);
     let [loading, setLoading] = useState(false);
@@ -219,6 +219,4 @@ function FormRegister(props) {
             </Card>
         </Fragment>
     )
-}
-
-export default Form.create()(FormRegister);
+})

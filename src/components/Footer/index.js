@@ -3,10 +3,8 @@ import { Layout } from 'antd';
 import './index.less';
 const { Footer } = Layout;
 
-function FooterLayout() {
+export default function () {
     return (
         <Footer className='footer'>Study React and Ant Design @ caicaijun</Footer>
     )
 }
-
-export default FooterLayout;

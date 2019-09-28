@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Pagination } from 'antd';
 import './index.less';
 
-function PaginationLayout(props) {
+export default function (props) {
 
     const { pagination, callback } = props;
 
@@ -28,5 +28,3 @@ function PaginationLayout(props) {
         </Fragment>
     )
 }
-
-export default PaginationLayout;

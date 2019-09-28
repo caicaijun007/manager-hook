@@ -4,7 +4,7 @@ import clearLoginInfo from '../../utils/clearLoginInfo';
 import './index.less';
 const { Header } = Layout;
 
-function HeaderLayout() {
+export default function () {
 
     let user = localStorage.getItem("_userinfo") ? JSON.parse(localStorage.getItem("_userinfo"))['_username'] : '菜菜君';
     let [userName] = useState(user);
@@ -27,5 +27,3 @@ function HeaderLayout() {
         </Fragment>
     )
 }
-
-export default HeaderLayout;

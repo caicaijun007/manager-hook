@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import { Card, Button, Modal } from 'antd';
 
-function Modals() {
+export default function () {
 
     let [showModal1, setShowModal1] = useState(false);
     let [showModal2, setShowModal2] = useState(false);
@@ -93,5 +93,3 @@ function Modals() {
         </Fragment>
     )
 }
-
-export default Modals;

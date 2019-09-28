@@ -8,7 +8,7 @@ import './index.less';
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
-function MenuSider(props) {
+export default function (props) {
 
     let user = localStorage.getItem("_userinfo") ? JSON.parse(localStorage.getItem("_userinfo")) : false;
     let [userInfo] = useState(user);
@@ -103,5 +103,3 @@ function MenuSider(props) {
         </Sider>
     )
 }
-
-export default MenuSider;

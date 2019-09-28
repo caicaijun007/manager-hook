@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Button, message } from 'antd';
 import './ui.less';
 
-function Messages() {
+export default function () {
 
     let showMessage = type => {
         message[type]("学习React Antd基础知识")
@@ -28,5 +28,3 @@ function Messages() {
         </div>
     )
 }
-
-export default Messages;

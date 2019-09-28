@@ -11,7 +11,7 @@
 
 ### 2、使用npm包管理工具，安装antd
 ```cmd
-# npm i antd --save-dev
+# npm i antd --save
 ```
 ### 3、配置antd组件的样式
 - 安装babel-plugin-import按需加载组件代码和样式的 babel 插件
@@ -92,12 +92,12 @@ const lessModuleRegex = /\.module\.less$/;
 - 菜单配置文件递归
 - 路由跳转
 ```cmd
-# npm i react-router-dom --save-dev
+# npm i react-router-dom --save
 ```
 ### 8、权限设置
 - 安装axios，封装ajax异步请求接口
 ```cmd
-# npm i axios --save-dev
+# npm i axios --save
 ```
 - 角色权限涉及到封装的、抽离的组件
 	- 查询组件
@@ -163,11 +163,11 @@ export default Form.create()(forwardRef(RoleForm));
 ### 9、登录页其、注册页
 - 安装md5，登录注册传给后端密码需要加密，后端再加密再验证
 ```cmd
-# npm i md5 --save-dev
+# npm i md5 --save
 ```
 - 安装百度echarts插件
 ```cmd
-# npm i echarts echarts-for-react --save-dev
+# npm i echarts echarts-for-react --save
 ```
 
 ### 问题总结：

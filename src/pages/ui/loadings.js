@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Card, Spin, Alert, BackTop } from 'antd';
 
-function Loadings() {
+export default function () {
 
     return (
         <Fragment>
@@ -55,5 +55,3 @@ function Loadings() {
         </Fragment>
     )
 }
-
-export default Loadings;

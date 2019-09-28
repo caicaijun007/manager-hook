@@ -5,7 +5,7 @@ import Table from '../../components/Table';
 import Pagination from '../../components/Pagination';
 import './table.less';
 
-function BasicTable() {
+export default function () {
 
     let [dataSource, setDataSource] = useState([]);
     let [page, setPage] = useState(1);
@@ -186,5 +186,3 @@ function BasicTable() {
         </Fragment>
     )
 }
-
-export default BasicTable;

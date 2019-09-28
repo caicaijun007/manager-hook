@@ -6,7 +6,7 @@ const FormItem = Form.Item;
 const RadioGroup = Radio.Group;
 const Option = Select.Option;
 
-function Search(props) {
+export default Form.create()(function (props) {
 
     let handleSubmit = (e) => {
         e && e.preventDefault();
@@ -106,6 +106,4 @@ function Search(props) {
             </Form>
         </Fragment>
     )
-}
-
-export default Form.create()(Search);
+})

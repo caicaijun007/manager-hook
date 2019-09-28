@@ -5,8 +5,7 @@ import MenuSider from '../MenuSider';
 import Header from '../Header';
 import Footer from '../Footer';
 
-function BaseLayout(props) {
-
+export default function (props) {
     //拦截hash路由地址改变，越权操作
     let roleMenuList = localStorage.getItem("_userinfo") ? JSON.parse(localStorage.getItem("_userinfo"))['_menus'] : '';
     roleMenuList = roleMenuList.split(',');
@@ -36,5 +35,3 @@ function BaseLayout(props) {
         </Layout>
     )
 }
-
-export default BaseLayout;

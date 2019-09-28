@@ -3,7 +3,7 @@ import { Card, Button, notification, Select } from 'antd';
 import './ui.less';
 const { Option } = Select;
 
-function Notifications() {
+export default function () {
 
     let handleOpen = () => {
         notification.open({
@@ -59,5 +59,3 @@ function Notifications() {
         </Fragment>
     )
 }
-
-export default Notifications;

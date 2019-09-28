@@ -1,7 +1,8 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { Card, Button } from 'antd';
 import './hook.less';
-function Example() {
+
+export default function () {
     const [count, setCount] = useState(0);
     const [title, setTitle] = useState('你还没点击！');
 
@@ -16,5 +17,3 @@ function Example() {
         </Fragment>
     )
 }
-
-export default Example;

@@ -13,7 +13,7 @@ import 'echarts/lib/component/legend';
 import 'echarts/lib/component/markPoint';
 import './phone.less';
 
-function PhoneCharts() {
+export default function () {
 
     let colorList = {
         '1': '梦幻蓝',
@@ -241,5 +241,3 @@ function PhoneCharts() {
         </Fragment>
     )
 }
-
-export default PhoneCharts;

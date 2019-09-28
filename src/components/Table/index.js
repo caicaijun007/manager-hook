@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Table } from 'antd';
 
-function TableLayout(props) {
+export default function (props) {
 
     const { tableType, columns, dataSource, changeSelected, changeRow, scroll, selectedRowKeys, rowKey } = props;
     const rowSelection = {
@@ -62,5 +62,3 @@ function TableLayout(props) {
         </Fragment>
     )
 }
-
-export default TableLayout;

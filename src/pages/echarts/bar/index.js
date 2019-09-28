@@ -10,7 +10,7 @@ import 'echarts/lib/component/legend';
 import 'echarts/lib/component/markPoint';
 import '../echart.less';
 
-function Bar() {
+export default function () {
 
     useEffect(() => echarts.registerTheme('manager', echartTheme), []);
 
@@ -139,5 +139,3 @@ function Bar() {
         </Fragment>
     )
 }
-
-export default Bar;

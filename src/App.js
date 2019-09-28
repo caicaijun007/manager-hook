@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.less';
 
-function App(props) {
+export default function (props) {
   return (
     <div>
       {props.children}
     </div>
-  );
+  )
 }
-
-export default App;

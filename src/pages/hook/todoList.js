@@ -7,7 +7,7 @@ import './hook.less';
 const ListItem = List.Item;
 export const Message = createContext({});
 
-function TodoList() {
+export default function () {
     const [inputValue, setInputValue] = useState('');
     const [state, dispatch] = useReducer(Reducer, defaultState);
 
@@ -49,5 +49,3 @@ function TodoList() {
         </Message.Provider>
     )
 }
-
-export default TodoList;

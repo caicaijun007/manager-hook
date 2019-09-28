@@ -5,7 +5,7 @@ const RadioGroup = Radio.Group;
 const RadioButton = Radio.Button;
 const ButtonGroup = Button.Group;
 
-function Btn() {
+export default function () {
 
     let [size, setSize] = useState('large');
     let handleSizeChange = e => setSize(e.target.value);
@@ -77,5 +77,3 @@ function Btn() {
         </Fragment >
     )
 }
-
-export default Btn;

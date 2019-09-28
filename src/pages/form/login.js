@@ -3,7 +3,7 @@ import { Card, Form, Input, Button, Icon, Checkbox, message } from 'antd';
 import './form.less';
 const FormItem = Form.Item;
 
-function Login(props) {
+export default Form.create()(function (props) {
 
     const { getFieldDecorator, validateFields, getFieldsValue, resetFields } = props.form;
 
@@ -74,6 +74,4 @@ function Login(props) {
             </Card>
         </Fragment>
     )
-}
-
-export default Form.create()(Login);
+})

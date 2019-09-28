@@ -25,8 +25,7 @@ import PhoneCharts from './pages/phone/charts';
 import Click from './pages/hook/click';
 import TodoList from './pages/hook/todoList';
 
-function Router() {
-
+export default function () {
     return (
         <HashRouter>
             <App>
@@ -64,5 +63,3 @@ function Router() {
         </HashRouter>
     )
 }
-
-export default Router;

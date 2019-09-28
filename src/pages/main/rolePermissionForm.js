@@ -4,19 +4,19 @@ import menuConfig from '../../configs/router.config';
 const FormItem = Form.Item;
 const Option = Select.Option;
 const TreeNode = Tree.TreeNode;
-const formItemLayout = {
-    labelCol: {
-        span: 6
-    },
-    wrapperCol: {
-        span: 18
-    }
-}
 
-function PermissonForm(props, ref) {
+export default Form.create({})(forwardRef(function (props, ref) {
 
     const { getFieldDecorator } = props.form;
     const { roleDetail, menuInfo, checkMenuInfo } = props;
+    const formItemLayout = {
+        labelCol: {
+            span: 6
+        },
+        wrapperCol: {
+            span: 18
+        }
+    }
 
     let getMenuList = (data) => {
         return data.map((item) => {
@@ -71,6 +71,4 @@ function PermissonForm(props, ref) {
             </FormItem>
         </Form>
     )
-}
-
-export default Form.create({})(forwardRef(PermissonForm));
+}))
